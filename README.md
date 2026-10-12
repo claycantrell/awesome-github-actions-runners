@@ -21,6 +21,7 @@ GitHub Actions are pretty damn cool, but lord knows the official runners are slo
     - [Cirun](#cirun)
     - [Depot](#depot)
     - [Cirrus Runners](#cirrus-runners)
+    - [Sengi Runners](#sengi-runners)
   - [Honorable mentions](#honorable-mentions)
   - [Contributing to this list](#contributing-to-this-list)
 
@@ -233,6 +234,20 @@ Notable features:
 - SOC2 Type 1 compliant.
 
 [^6a]: https://cirrus-runners.app/blog/2025/01/07/announcing-m4-pro-availability-for-cirrus-runners/
+
+### Sengi Runners
+
+[Sengi Runners](https://sengi.run/) provides managed Ubuntu 24.04 x64 runners for GitHub Actions. Connect a repository, then change the `runs-on` label for supported jobs; workflow steps and results stay in GitHub.
+
+Pricing [here](https://sengi.run/#pricing). Setup instructions [here](https://sengi.run/agent).
+
+Notable features:
+
+- A fresh VM for every job, with 2 vCPU / 8 GB, 4 vCPU / 16 GB and 8 vCPU / 32 GB options.
+- $0.003, $0.006 and $0.012 per execution minute respectively, rounded up per job. Boot and teardown are not billed.
+- A shared monthly allowance of 3,000 standard-2-equivalent free minutes, weighted 1/2/4 by runner size. No card required to start.
+- No subscription or monthly minimum.
+- Linux x64 only; Windows, macOS and ARM runners are not currently offered.
 
 ## Honorable mentions
 
