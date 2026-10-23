@@ -21,7 +21,7 @@ GitHub Actions are pretty damn cool, but lord knows the official runners are slo
     - [Cirun](#cirun)
     - [Depot](#depot)
     - [Cirrus Runners](#cirrus-runners)
-    - [Sengi Runners](#sengi-runners)
+    - [Sengi](#sengi)
   - [Honorable mentions](#honorable-mentions)
   - [Contributing to this list](#contributing-to-this-list)
 
@@ -235,19 +235,19 @@ Notable features:
 
 [^6a]: https://cirrus-runners.app/blog/2025/01/07/announcing-m4-pro-availability-for-cirrus-runners/
 
-### Sengi Runners
+### Sengi
 
-[Sengi Runners](https://sengi.run/) provides managed Ubuntu 24.04 x64 runners for GitHub Actions. Connect a repository, then change the `runs-on` label for supported jobs; workflow steps and results stay in GitHub.
+[Sengi](https://sengi.run/?utm_source=awesome-github-actions-runners&utm_medium=listing&utm_campaign=launch-2026-10) runs GitHub Actions jobs on 5 GHz bare-metal AMD Ryzen 9 7950X3D machines with local NVMe, for up to 74% less per build than GitHub's runners. Moving a job over is a one-line `runs-on` change; workflows, steps and results stay in GitHub.
 
-Pricing [here](https://sengi.run/#pricing). Setup instructions [here](https://sengi.run/agent).
+Pricing [here](https://sengi.run/?utm_source=awesome-github-actions-runners&utm_medium=listing&utm_campaign=launch-2026-10#pricing).
 
 Notable features:
 
-- A fresh VM for every job, with 2 vCPU / 8 GB, 4 vCPU / 16 GB and 8 vCPU / 32 GB options.
-- $0.003, $0.006 and $0.012 per execution minute respectively, rounded up per job. Boot and teardown are not billed.
-- A shared monthly allowance of 3,000 standard-2-equivalent free minutes, weighted 1/2/4 by runner size. No card required to start.
-- No subscription or monthly minimum.
-- Linux x64 only; Windows, macOS and ARM runners are not currently offered.
+- 5 GHz AMD Ryzen 9 7950X3D desktop CPUs on bare metal, with local NVMe disks.
+- A fresh VM for every job; 2 vCPU jobs start in about 2 seconds on a pre-booted VM.
+- 2 vCPU / 8 GB, 4 vCPU / 16 GB and 8 vCPU / 32 GB runners at $0.003, $0.006 and $0.012 per minute. Boot and teardown are never billed.
+- 3,000 minutes included monthly, no subscription or monthly minimum.
+- Caches included: `actions/cache` and Docker layer caching (`type=gha`) work unchanged.
 
 ## Honorable mentions
 
